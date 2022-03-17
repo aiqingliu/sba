@@ -1,0 +1,115 @@
+
+spring:
+  datasource:
+    username: ticmnm
+    password: joyin
+    url: jdbc:oracle:thin:@localhost:1521:orcl?characterEncoding=utf-8&useUnicode=true
+#    时区
+#    &serverTimezone=UTC
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+server:
+  port: 8080
+
+#---
+#spring:
+#  data:
+#    cassandra:
+#      username: ticmnm
+#      password: joyin
+
+
+# excelmodel注入
+excelmodel:
+  id: 'a_test_1'
+  name_en: 't1'
+  name_cn: '中文t1'
+  columnList: []
+  excelSheetMap: {}
+  path_a_r: 'E:/Users/LAQ/IdeaProjects/SpringBoot_A/src/main/resources/files/excels/readExcel.xlsx'
+  path_r_r: 'classpath:files/excels/readExcel.xlsx'
+#  文件读取使用sheetmap
+  sheetMap:
+    # sheet的key
+    Sheet1:
+      # sheetmodel
+      id: '1'
+      name_en: 'Sheet1'
+      name_cn: '中文sheet1'
+      head_r: 1
+      head_c: 0
+      data_r: 2
+      data_c: 0
+      sheet_index: 1
+      columnMap:
+        field1: {id: '1_1', c: 1, r: 0, col_index: 0, name_en: 'field1', name_cn: '中文field1'}
+        field2: {id: '1_2', c: 2, r: 0, col_index: 0, name_en: 'field2', name_cn: '中文field2'}
+        field3: {id: '1_3', c: 3, r: 0, col_index: 0, name_en: 'field3', name_cn: '中文field3'}
+        field4: {id: '1_4', c: 4, r: 0, col_index: 0, name_en: 'field4', name_cn: '中文field4'}
+        field5: {id: '1_5', c: 5, r: 0, col_index: 0, name_en: 'field5', name_cn: '中文field5'}
+        field6: {id: '1_6', c: 6, r: 0, col_index: 0, name_en: 'field6', name_cn: '中文field6'}
+    Sheet2:
+      # sheetmodel
+      id: '2'
+      name_en: 'Sheet2'
+      name_cn: '中文sheet2'
+      head_r: 1
+      head_c: 0
+      data_r: 2
+      data_c: 0
+      sheet_index: 2
+      columnMap:
+        field1: { id: '2_1', c: 1, r: 0, col_index: 0, name_en: 'field1', name_cn: '中文field1' }
+        field2: { id: '2_2', c: 2, r: 0, col_index: 0, name_en: 'field2', name_cn: '中文field2' }
+        field3: { id: '2_3', c: 3, r: 0, col_index: 0, name_en: 'field3', name_cn: '中文field3' }
+        field4: { id: '2_4', c: 4, r: 0, col_index: 0, name_en: 'field4', name_cn: '中文field4' }
+#        field5: { id: '2_5', c: 5, r: 0, col_index: 0, name_en: 'field5', name_cn: '中文field5' }
+        field6: { id: '2_6', c: 6, r: 0, col_index: 0, name_en: 'field6', name_cn: '中文field6' }
+  # 表格位置
+  excel_index: 0
+  sheetColumnMap: {}
+  path_a_w: 'E:/Users/LAQ/IdeaProjects/SpringBoot_A/src/main/resources/files/excels/writeExcel.xlsx'
+  path_r_w: 'classpath:files/excels/writeExcel.xlsx'
+#  文件写入使用sheetlist
+  sheetList:
+    - id: '1'
+      name_en: 'sheet1'
+      name_cn: '中文sheet1'
+      data_c: 1
+      data_r: 0
+      sheet_index: 1
+      columnList:
+        - {id: '1_1', c: 0, r: 0, col_index: 0, name_en: 'field1', name_cn: '中文field1'}
+        - {id: '1_2', c: 0, r: 0, col_index: 0, name_en: 'field2', name_cn: '中文field2'}
+        - {id: '1_3', c: 0, r: 0, col_index: 0, name_en: 'field3', name_cn: '中文field3'}
+      sheetColumnMap: {}
+      columnMap: {}
+    - id: '2'
+      name_en: 'sheet2'
+      name_cn: '中文sheet2'
+      data_c: 1
+      data_r: 0
+      sheet_index: 2
+      columnList:
+        - { id: '2_1', c: 0, r: 0, col_index: 0, name_en: 'field1', name_cn: '中文field1' }
+        - { id: '2_2', c: 0, r: 0, col_index: 0, name_en: 'field2', name_cn: '中文field2' }
+        - { id: '2_3', c: 0, r: 0, col_index: 0, name_en: 'field3', name_cn: '中文field3' }
+        - { id: '2_4', c: 0, r: 0, col_index: 0, name_en: 'field4', name_cn: '中文field4' }
+      sheetColumnMap: { }
+      columnMap: {}
+    - id: '3'
+      name_en: 'sheet3'
+      name_cn: '中文sheet3'
+      data_c: 1
+      data_r: 0
+      sheet_index: 3
+      columnList:
+        - { id: '3_1', c: 0, r: 0, col_index: 0, name_en: 'field1', name_cn: '中文field1' }
+        - { id: '3_2', c: 0, r: 0, col_index: 0, name_en: 'field2', name_cn: '中文field2' }
+        - { id: '3_3', c: 0, r: 0, col_index: 0, name_en: 'field3', name_cn: '中文field3' }
+        - { id: '3_4', c: 0, r: 0, col_index: 0, name_en: 'field4', name_cn: '中文field4' }
+        - { id: '3_5', c: 0, r: 0, col_index: 0, name_en: 'field5', name_cn: '中文field5' }
+        - { id: '3_6', c: 0, r: 0, col_index: 0, name_en: 'field6', name_cn: '中文field6' }
+        - { id: '3_7', c: 0, r: 0, col_index: 0, name_en: 'field7', name_cn: '中文field7' }
+      sheetColumnMap: { }
+      columnMap: {}

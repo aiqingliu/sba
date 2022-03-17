@@ -1,0 +1,53 @@
+# excelmodel??
+excelmodel:
+  id: 'a_test_1'
+  name_en: 't1'
+  name_cn: '??t1'
+  columnList: []
+  excelSheetMap: {}
+  excel_index: 0
+  sheetColumnMap: {}
+  path_a: 'E:/Users/LAQ/IdeaProjects/SpringBoot_A/src/main/resources/files/excels/writeExcel.xlsx'
+  path_r: 'classpath:files/excels/writeExcel.xlsx'
+  sheetList:
+    - id: '1'
+      name_en: 'sheet1'
+      name_cn: '??sheet1'
+      data_c: 1
+      data_r: 0
+      sheet_index: 1
+      columnList:
+        - {id: '1_1', c: 0, r: 0, col_index: 0, name_en: 'field1', name_cn: '??field1'}
+        - {id: '1_2', c: 0, r: 0, col_index: 0, name_en: 'field2', name_cn: '??field2'}
+        - {id: '1_3', c: 0, r: 0, col_index: 0, name_en: 'field3', name_cn: '??field3'}
+      sheetColumnMap: {}
+      columnMap: {}
+    - id: '2'
+      name_en: 'sheet2'
+      name_cn: '??sheet2'
+      data_c: 1
+      data_r: 0
+      sheet_index: 2
+      columnList:
+        - { id: '2_1', c: 0, r: 0, col_index: 0, name_en: 'field1', name_cn: '??field1' }
+        - { id: '2_2', c: 0, r: 0, col_index: 0, name_en: 'field2', name_cn: '??field2' }
+        - { id: '2_3', c: 0, r: 0, col_index: 0, name_en: 'field3', name_cn: '??field3' }
+        - { id: '2_4', c: 0, r: 0, col_index: 0, name_en: 'field4', name_cn: '??field4' }
+      sheetColumnMap: { }
+      columnMap: {}
+    - id: '3'
+      name_en: 'sheet3'
+      name_cn: '??sheet3'
+      data_c: 1
+      data_r: 0
+      sheet_index: 3
+      columnList:
+        - { id: '3_1', c: 0, r: 0, col_index: 0, name_en: 'field1', name_cn: '??field1' }
+        - { id: '3_2', c: 0, r: 0, col_index: 0, name_en: 'field2', name_cn: '??field2' }
+        - { id: '3_3', c: 0, r: 0, col_index: 0, name_en: 'field3', name_cn: '??field3' }
+        - { id: '3_4', c: 0, r: 0, col_index: 0, name_en: 'field4', name_cn: '??field4' }
+        - { id: '3_5', c: 0, r: 0, col_index: 0, name_en: 'field5', name_cn: '??field5' }
+        - { id: '3_6', c: 0, r: 0, col_index: 0, name_en: 'field6', name_cn: '??field6' }
+        - { id: '3_7', c: 0, r: 0, col_index: 0, name_en: 'field7', name_cn: '??field7' }
+      sheetColumnMap: { }
+      columnMap: {}
